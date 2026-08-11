@@ -35,12 +35,7 @@ def find_similar_users(rating_matrix, user_index):
   for index, user in enumerate(rating_matrix):
     # skip the target user itself
     if index == user_index:
-      continue
-    
-    # # get only top 5
-    # if index == 5:
-    #   break
-    
+      continue    
     # compute the Euclidean distance between the target user and the current user
     distance = euclidean_distance(target_user, user)
 

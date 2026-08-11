@@ -20,14 +20,3 @@ def load_ratings(filepath):
 
   # return the user names, item names, and rating matrix
   return user_names, item_names, rating_matrix
-
-# returns users who have at least one unrated movie (NaN) in their vector.
-# def get_inactive_users(rating_matrix, user_names):
-#   # Convert user_names to NumPy array to safely support boolean indexing
-#   user_names = np.array(user_names)
-  
-#   # Create a boolean mask: True for rows with AT LEAST ONE NaN
-#   has_nan_mask = np.isnan(rating_matrix).any(axis=1)
-  
-#   # Return user names matching the mask
-#   return user_names[has_nan_mask]
