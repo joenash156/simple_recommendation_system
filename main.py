@@ -81,6 +81,7 @@ def get_best_recommendation_for_user(target_user_name, recommendations):
 def print_average_ratings():
   average_ratings = calculate_average_ratings(ratings)
 
+  print()
   print("Average rating for each book")
   print("----------------------------")
 
